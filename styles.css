@@ -97,10 +97,20 @@ h2 {
     right: 0;
     top: 0;
   }
+  .topnav.responsive {
+    position: absolute;
+    right: 0;
+    margin: 15px;
+    background-color: #093426;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: right;
+    text-align: left;
+    padding: 7px;
   }
 }
 
