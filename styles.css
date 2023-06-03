@@ -50,6 +50,16 @@ h2 {
   color: #E7F3EF;
   }
 
+h3 {
+    padding: 0px 200px 0px 200px;
+    text-align: left;
+    }
+
+ul {
+    list-style-type: square;
+    padding-left: 50px;
+    }
+
 .name {
   display: flex;
   margin-right: auto;
