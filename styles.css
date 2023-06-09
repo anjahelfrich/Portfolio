@@ -5,6 +5,7 @@
 #23483C
 #093426
 
+
 margin: 0 auto = centers
 margin useful - top, right, bottom, left
 rem, px, vh em
@@ -45,20 +46,6 @@ html, body {
   border: solid medium #E7F3EF;
   filter: grayscale(25%);
   }
-
-h2 {
-  color: #E7F3EF;
-  }
-
-h3 {
-    padding: 0px 200px 0px 200px;
-    text-align: left;
-    }
-
-ul {
-    list-style-type: square;
-    padding-left: 50px;
-    }
 
 .name {
   display: flex;
@@ -139,6 +126,26 @@ h1 {
   decoration: bold;
   background-color: #9A8B4F;
   min-height: 100vh;
+  }
+
+h2 {
+  color: #E7F3EF;
+  }
+
+h3 {
+    padding: 0px 200px 0px 200px;
+    text-align: left;
+    }
+
+ul {
+    list-style-type: square;
+    padding-left: 50px;
+    }
+
+.skill_pie {
+  display: flex;
+  height: 100%;
+  width: 100%;
   }
 
 #map {
