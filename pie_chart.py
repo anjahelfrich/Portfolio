@@ -1,7 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib.pyplot as plt
-import numpy as np
 
 fig, ax = plt.subplots(figsize=(15,15), subplot_kw=dict(projection="polar"))
 fig.tight_layout()
