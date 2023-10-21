@@ -43,7 +43,7 @@ function homeMap() {
     "./gpxFILES/Tinker_Town_Twofer.gpx",
   ]
 
-  var map = L.map('map').setView([35.1072, -106.6166], 13)
+  var map = L.map('map').setView([35.095691, -106.386049], 10)
 
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}.', {
     attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC'
