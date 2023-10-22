@@ -43,13 +43,24 @@ function homeMap() {
     "./gpxFILES/Tinker_Town_Twofer.gpx",
   ]
 
-  var map = L.map('map').setView([35.095691, -106.386049], 10)
+  var map = L.map('map').setView([35.675517, -105.945269],8)
 
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}.', {
     attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC'
   }).addTo(map);
 
+  var customLayer = L.geoJson(null, {
+  style: function(feature) {
+    return { color: '#CA6702', weight: 2 };
+  },
+  onEachFeature: function(feature, layer) {
+    if (feature.properties.name) {
+      layer.bindPopup(feature.properties.name);
+    }
+  }
+});
+
   for (var i = 0; i < fileList.length; i += 1) {
-  omnivore.gpx(fileList[i]).addTo(map);
+  omnivore.gpx(fileList[i], null, customLayer).addTo(map);
   }
 }
